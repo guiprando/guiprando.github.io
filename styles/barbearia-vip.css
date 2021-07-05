@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /* overflow: hidden; */
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none
+}
+
+body{
+    width: 100vw;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+    z-index: 30;
+    height: 60px;
+    background-color: #fff;
+}
+
+.container {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 7vw;
+    display: flex;
+    grid-template-areas: 
+        "lgo ... nav";
+    grid-template-columns: auto 1fr auto;   
+    align-items: center;
+}
+
+.nav-bar{
+    cursor: default;
+    margin: auto;
+    font-family: Poppins;
+    text-align: center;
+    align-items: center;
+}
+
+.h1-voce-esta-vendo {
+    color: #1d1d1d;
+    font-size: 12px;
+    font-weight: 400;
+} 
+
+.h2-barbearia-vip-app {
+    color: #1d1d1d;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.arrow-left {
+    color: #1d1d1d;
+    cursor: pointer;
+}
+
+.h3-voltar-para-home {
+    color: #1d1d1d;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 500;
+    margin-left: 0.4vw;
+}
+
+.arrow-right {
+    color: #1d1d1d;
+    cursor: pointer;
+}
+
+.h3-proximo-projeto {
+    color: #1d1d1d;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 500;
+    margin-right: 0.4vw;
+}
+
+.nav-bar a { 
+    text-decoration:none; 
+    text-align: center;
+    color: #1d1d1d;
+    transition: all 0.15s;
+} 
+.nav-bar a:hover {
+    grid-auto-flow: column;
+    color: #959595;
+    text-align: center;
+    font-weight: 400;
+}
+
+.nav-bar li:last-child {
+    float: right;
+}
+
+.main-vip {
+    width: 100%;
+    background-color: #2e2e2d;
+}
+
+.img-vip {
+    margin: 0 7vw 0 7vw;
+    width: 86vw;
+    align-items: center;
+}
+
+.barbeariavip-video {
+    margin-top: 0px;
+    margin: 0 7vw;
+    width: 86vw;
+    height: calc(50.4167vw);
+}
+
+.footer-proximo-trabalho {
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 300;
+    color: #ffffff;
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.footer-prime {
+    cursor: pointer;
+    font-size: 40px;
+    color: #ffffff;
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15vh;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body::-webkit-scrollbar {
+    width: 6px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;    /* color of the scroll thumb */
+    border-radius: 2px;    /* roundness of the scroll thumb */
+    border: 4px solid darkgrey;  /* creates padding around scroll thumb */
+  }
+
+@media (max-width: 800px) {
+    .h1-voce-esta-vendo {
+        color: #1d1d1d;
+        font-size: 12px;
+        font-weight: 400;
+    } 
+    
+    .h2-barbearia-vip-app {
+        color: #1d1d1d;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .arrow-left {
+        color: #1d1d1d;
+        cursor: pointer;
+    }
+    
+    .h3-voltar-para-home {
+        color: #1d1d1d;
+        cursor: pointer;
+        font-size: 14px;
+        font-family: Poppins;
+        font-weight: 500;
+        margin-left: 0.4vw;
+        display: none;
+    }
+    
+    .arrow-right {
+        color: #1d1d1d;
+        cursor: pointer;
+    }
+    
+    .h3-proximo-projeto {
+        color: #1d1d1d;
+        cursor: pointer;
+        font-size: 14px;
+        font-family: Poppins;
+        font-weight: 500;
+        margin-right: 0.4vw;
+        display: none;
+    }
+
+    .img-vip {
+        margin: 60px 0 0 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer-proximo-trabalho {
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 300;
+        color: #ffffff;
+        font-family: Poppins;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-prime {
+        cursor: pointer;
+        font-size: 24px;
+        color: #ffffff;
+        font-family: Poppins;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15vh;
+    }
+}

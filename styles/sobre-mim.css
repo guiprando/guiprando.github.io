@@ -1,0 +1,1330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+main section:nth-child(odd) {
+    height: 100vh;
+}
+
+main section:nth-child(even) {
+    height: 100vh;
+}
+
+.ghost {
+    width: 100%;
+    height: 80px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none
+}
+
+body{
+    padding: 0;
+    margin: 0;
+
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 30;
+    height: 76px;
+    background-color: #fff;
+}
+
+.container {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 7vw;
+    display: grid;
+    grid-template-areas: 
+        "lgo ... nav";
+    grid-template-columns: auto 1fr auto;   
+    align-content: center;
+}
+
+.gui-logo {
+    width: 20%;
+}
+
+.nav-bar {
+    grid-area: nav;
+    display: grid;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Poppins;
+}
+
+.nav-bar ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 4vw;
+}
+
+.nav-bar a { 
+    text-decoration:none; 
+    text-align: center;
+    color: #1d1d1d;
+    transition: all 0.15s;
+} 
+.nav-bar a:hover {
+    grid-auto-flow: column;
+    color: #959595;
+    text-align: center;
+    font-weight: 400;
+}
+
+.nav-bar li:last-child {
+    float: right;
+}
+
+.redes-sociais-cel {
+    display: none;
+}
+
+.ghost {
+    width: 100%;
+    height: 80px;
+}
+
+.sobre-mim {
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    padding-top: 12vw;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+
+.main-sobre {
+    display: flex;
+}
+
+.h1-hello {
+    padding-top: 1vw;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.h1-text {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 22px;
+    max-width: 520px;
+    text-align: left;
+}
+
+.section-img { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-gui {
+    margin-left: 80px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.grid-movies {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.american-beauty {
+    height: 174px;
+    width: 444px;
+    background-image: url(../img/sobre-mim/filmes/american-beauty.png);
+    background-color: #cccccc;
+}
+
+.the-big-lebowski {
+    background-image: url(../img/sobre-mim/filmes/the-big-lebowski.png);
+    height: 174px;
+    width: 444px;
+}
+
+.el-secreto-de-sus-ojos {
+    background-image: url(../img/sobre-mim/filmes/el-secreto-de-sus-ojos.png);
+    height: 174px;
+    width: 444px;
+}
+
+.spider-man-into-the-spider-verse {
+    background-image: url(../img/sobre-mim/filmes/spider-man-into-the-spider-verse.png);
+    height: 174px;
+    width: 444px;
+}
+
+.se7en {
+    background-image: url(../img/sobre-mim/filmes/se7en.png);
+    height: 174px;
+    width: 444px;
+}
+
+.gran-torino {
+    background-image: url(../img/sobre-mim/filmes/gran-torino.png);
+    height: 174px;
+    width: 444px;
+}
+
+.img-imdb {
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.img-imdb:hover {
+    transition: all 0.2s;
+    opacity: 60%;
+}
+
+.grid-music {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.mac-miller {
+    background-image: url(../img/sobre-mim/musicas/mac-miller.png);
+    height: 174px;
+    width: 444px;
+}
+
+.juice-wrld {
+    background-image: url(../img/sobre-mim/musicas/juice-wrld.png);
+    height: 174px;
+    width: 444px;
+}
+
+.post-malone {
+    background-image: url(../img/sobre-mim/musicas/post-malone.png);
+    height: 174px;
+    width: 444px;
+}
+
+.yung-buda {
+    background-image: url(../img/sobre-mim/musicas/yung-buda.png);
+    height: 174px;
+    width: 444px;
+}
+
+.bring-me-the-horizon {
+    background-image: url(../img/sobre-mim/musicas/bring-me-the-horizon.png);
+    height: 174px;
+    width: 444px;
+}
+
+.justin-bieber {
+    background-image: url(../img/sobre-mim/musicas/justin-bieber.png);
+    height: 174px;
+    width: 444px;
+}
+
+.text-opacity {
+    height: 174px;
+    width: 444px;
+    opacity: 0%;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 174px;
+    width: 444px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: white;
+}
+
+.text-opacity:hover {
+    background-color: black;
+    opacity: 80%;
+    transition: all 0.2s;
+}
+
+.img-spotify {
+    margin-top: 40px;
+}
+
+.img-spotify:hover {
+    transition: all 0.2s;
+    opacity: 60%;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body::-webkit-scrollbar {
+    width: 6px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;    /* color of the scroll thumb */
+    border-radius: 2px;    /* roundness of the scroll thumb */
+    border: 4px solid darkgrey;  /* creates padding around scroll thumb */
+  }
+
+@media(max-width: 1024px) {
+    .main {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        font-family: "Taxi Driver";
+        font-size: 1em;
+    }
+
+    header {
+        position: fixed;
+    }
+  
+    .max-header {
+        height: 77px;
+    }
+    .min-header {
+        height: 77px;
+    }
+    .container {
+        position: fixed;
+        position: relative;
+        padding: 0 7vw;
+        grid-template-areas: 
+            "lgo ... mnu";
+    }
+
+    .max-logo .gui-logo img {
+        height: 20px;
+    }
+    
+    .min-logo .gui-logo img {
+        height: 20px;
+    }
+
+    .menu {
+        grid-area: mnu;
+        display: grid;
+        align-content: center;
+    }
+    .hamburger {
+        position: relative;
+        width: 28px;
+        height: 3px;
+        transition: all 0.4s ease-out;
+        color: #1d1d1d;
+    }
+
+    .hamburger::before {
+        content: "";
+        position: absolute;
+        top: -8px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.4s ease-out;
+    }
+    .hamburger::after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.4s ease-out;
+    }
+    .max-hamburger, .max-hamburger::before, .max-hamburger::after {
+        background-color: #1d1d1d;
+    }
+    .min-hamburger, .min-hamburger::before, .min-hamburger::after{
+        background-color: #1d1d1d;
+    }
+    .close-btn {
+        transform: rotateZ(45deg);
+        width: 32px;
+        
+    }
+    .close-btn::before, .close-btn::after {
+        top: 0;
+        transform: rotateZ(90deg)
+    }
+    .nav-bar {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        transform: translateY(-150%);
+        transition: all 0.4s ease-out;
+    }
+
+    .max-nav {
+        top: 76px;
+        height: calc(100vh - 76px);
+    }
+    .min-nav {
+        top: 60px;
+        height: calc(100vh - 60px);
+    }
+    .menu-opened {
+        transform: translateY(0)
+    }
+
+    .nav-bar ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-bar li {
+        font-size: 36px;
+        font-family: Poppins;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .nav-bar a { 
+        font-weight: 400;
+    } 
+    
+    .redes-sociais {
+        display: none;
+    }
+
+    .redes-sociais-cel {
+        display: block;
+        margin-top: 10px;
+
+        align-self: center;
+    }
+
+    .redes-sociais-cel > a {
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+
+    .min-nav a {
+        font-size: 1em;
+        color: #fff;
+    } 
+
+    .sobre-mim {
+        justify-content: center;
+        padding-top: 10%;
+    }
+
+    .main-sobre {
+        display: flex;
+        justify-content: flex-start;
+        align-content: start;
+        flex-direction: column;
+    }
+
+    .main-sobre h1 {
+        font-size: 18px;
+    }
+
+    .redes-foto {
+        margin-top: 36px;
+        display: flex;
+    }
+
+    .img-gui {
+        margin-left: 0;
+    }
+
+}
+
+@media(max-width: 440px) {
+
+    .container {
+        position: fixed;
+        position: relative;
+        padding: 0 16px;
+        grid-template-areas: "lgo ... mnu";
+    }
+
+    .main-sobre h1 {
+        font-size: 14px;
+    }
+
+    .sobre-mim {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+
+  @media(max-width: 360px) {
+    .american-beauty {
+        height: 120px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: #cccccc;
+    }
+    
+    .the-big-lebowski {
+        height: 120px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .el-secreto-de-sus-ojos {
+        height: 120px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .spider-man-into-the-spider-verse {
+        height: 120px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .se7en {
+        height: 120px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .gran-torino {
+        height: 120px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .text-opacity {
+        height: 120px;
+        width: 124px;
+        opacity: 80%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: #1d1d1d;
+    }
+
+    .text {
+        height: 120px;
+        width: 124px;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 28px;
+        color: white;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .h1-hello {
+        padding-top: 1vw;
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .hello {
+        width: 18px;
+    }
+    
+    .h1-text {
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .grid-music {
+        display: grid;
+        grid-gap: 8px;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mac-miller {        
+        height: 120px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .juice-wrld {
+        height: 120px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .post-malone {
+        height: 120px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .yung-buda {
+        height: 120px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .bring-me-the-horizon {
+        height: 120px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .justin-bieber {
+        height: 120px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .img-imdb {
+        margin-top: -24px;
+    }
+
+    .img-spotify {
+        margin-top: 16px;
+    }
+}
+
+@media(min-width: 361px) and (max-width: 390px) {
+    .american-beauty {
+        height: 140px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: #cccccc;
+    }
+    
+    .the-big-lebowski {
+        height: 140px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .el-secreto-de-sus-ojos {
+        height: 140px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .spider-man-into-the-spider-verse {
+        height: 140px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .se7en {
+        height: 140px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .gran-torino {
+        height: 140px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .text-opacity {
+        height: 140px;
+        width: 124px;
+        opacity: 80%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: #1d1d1d;
+    }
+
+    .text {
+        height: 140px;
+        width: 124px;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 28px;
+        color: white;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .h1-hello {
+        padding-top: 1vw;
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .hello {
+        width: 18px;
+    }
+    
+    .h1-text {
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .grid-music {
+        display: grid;
+        grid-gap: 8px;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mac-miller {        
+        height: 140px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .juice-wrld {
+        height: 140px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .post-malone {
+        height: 140px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .yung-buda {
+        height: 140px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .bring-me-the-horizon {
+        height: 140px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .justin-bieber {
+        height: 140px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .img-imdb {
+        margin-top: -24px;
+    }
+
+    .img-spotify {
+        margin-top: 16px;
+    }
+}
+
+@media(min-width: 391px) and (max-width: 800px) {
+    .american-beauty {
+        height: 170px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: #cccccc;
+    }
+    
+    .the-big-lebowski {
+        height: 170px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .el-secreto-de-sus-ojos {
+        height: 170px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .spider-man-into-the-spider-verse {
+        height: 170px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .se7en {
+        height: 170px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .gran-torino {
+        height: 170px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .text-opacity {
+        height: 170px;
+        width: 124px;
+        opacity: 80%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: #1d1d1d;
+    }
+
+    .text {
+        height: 170px;
+        width: 124px;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 28px;
+        color: white;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .h1-hello {
+        padding-top: 1vw;
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .hello {
+        width: 18px;
+    }
+    
+    .h1-text {
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .grid-music {
+        display: grid;
+        grid-gap: 8px;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mac-miller {        
+        height: 170px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .juice-wrld {
+        height: 170px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .post-malone {
+        height: 170px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .yung-buda {
+        height: 170px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .bring-me-the-horizon {
+        height: 170px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .justin-bieber {
+        height: 170px;
+        width: 124px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .img-imdb {
+        margin-top: -24px;
+    }
+
+    .img-spotify {
+        margin-top: 16px;
+    }
+}
+
+    @media (min-width: 1025px) and (max-width: 1279px) {
+
+        .main {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            font-family: "Taxi Driver";
+            font-size: 1em;
+        }
+
+        .h1-hello {
+            padding-top: 1vw;
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 22px;
+        }
+        
+        .h1-text {
+            font-family: Poppins;
+            font-weight: 300;
+            font-size: 20px;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .american-beauty {
+            height: 140px;
+            width: 400px;
+        }
+
+        .the-big-lebowski {
+            height: 140px;
+            width: 400px;
+        }
+
+        .el-secreto-de-sus-ojos {
+            height: 140px;
+            width: 400px;
+        }
+
+        .spider-man-into-the-spider-verse {
+            height: 140px;
+            width: 400px;
+        }
+
+        .se7en {
+            height: 140px;
+            width: 400px;
+        }
+
+        .gran-torino {
+            height: 140px;
+            width: 400px;
+        }
+
+        .mac-miller {
+            height: 140px;
+            width: 400px;
+        }
+
+        .juice-wrld {
+            height: 140px;
+            width: 400px;
+        }
+
+        .post-malone {
+            height: 140px;
+            width: 400px;
+        }
+
+        .yung-buda {
+            height: 140px;
+            width: 400px;
+        }
+
+        .bring-me-the-horizon {
+            height: 140px;
+            width: 400px;
+        }
+
+        .justin-bieber {
+            height: 140px;
+            width: 400px;
+        }
+
+        .text-opacity {
+            height: 140px;
+            width: 400px;
+            opacity: 0%;
+        }
+        
+        .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 140px;
+            width: 400px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 28px;
+            color: white;
+        }
+        
+        .text-opacity:hover {
+            background-color: black;
+            opacity: 80%;
+            transition: all 0.2s;
+        }
+        .img-imdb {
+            margin-top: -24px;
+        }
+    
+        .img-spotify {
+            margin-top: 16px;
+        }
+        
+        .movies.section-img {
+            width: 60%;
+    }
+}
+
+
+    @media (min-width: 1280px) and (max-width: 2200px) {
+
+        .main {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            font-family: "Taxi Driver";
+            font-size: 1em;
+        }
+
+        .h1-hello {
+            padding-top: 1vw;
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 22px;
+        }
+        
+        .h1-text {
+            font-family: Poppins;
+            font-weight: 300;
+            font-size: 20px;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .american-beauty {
+            height: 140px;
+            width: 400px;
+        }
+
+        .the-big-lebowski {
+            height: 140px;
+            width: 400px;
+        }
+
+        .el-secreto-de-sus-ojos {
+            height: 140px;
+            width: 400px;
+        }
+
+        .spider-man-into-the-spider-verse {
+            height: 140px;
+            width: 400px;
+        }
+
+        .se7en {
+            height: 140px;
+            width: 400px;
+        }
+
+        .gran-torino {
+            height: 140px;
+            width: 400px;
+        }
+
+        .mac-miller {
+            height: 140px;
+            width: 400px;
+        }
+
+        .juice-wrld {
+            height: 140px;
+            width: 400px;
+        }
+
+        .post-malone {
+            height: 140px;
+            width: 400px;
+        }
+
+        .yung-buda {
+            height: 140px;
+            width: 400px;
+        }
+
+        .bring-me-the-horizon {
+            height: 140px;
+            width: 400px;
+        }
+
+        .justin-bieber {
+            height: 140px;
+            width: 400px;
+        }
+
+        .text-opacity {
+            height: 140px;
+            width: 400px;
+            opacity: 0%;
+        }
+        
+        .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 140px;
+            width: 400px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 28px;
+            color: white;
+        }
+        
+        .text-opacity:hover {
+            background-color: black;
+            opacity: 80%;
+            transition: all 0.2s;
+        }
+
+        .img-imdb {
+            margin-top: -24px;
+        }
+    
+        .img-spotify {
+            margin-top: 16px;
+        }
+        
+    }
+
+    @media (min-width: 801px) and (max-width: 1024px) {
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* overflow: hidden; */
+        }
+        
+        main section:nth-child(odd) {
+            height: 100vh;
+        }
+        
+        main section:nth-child(even) {
+            height: 100vh;
+        }
+        
+        .ghost {
+            width: 100%;
+            height: 80px;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none
+        }
+        
+        body{
+            padding: 0;
+            margin: 0;
+        
+        }
+        
+        header {
+            width: 100%;
+            position: fixed;
+            z-index: 30;
+            height: 76px;
+            background-color: #fff;
+        }
+        
+        .container {
+            height: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: auto 1fr auto;   
+            align-content: center;
+        }
+        
+        .logo {
+            grid-area: lgo;
+        }
+        
+        
+        .ghost {
+            width: 100%;
+            height: 80px;
+        }
+
+        .american-beauty {
+            height: 140px;
+            width: 400px;
+        }
+
+        .the-big-lebowski {
+            height: 140px;
+            width: 400px;
+        }
+
+        .el-secreto-de-sus-ojos {
+            height: 140px;
+            width: 400px;
+        }
+
+        .spider-man-into-the-spider-verse {
+            height: 140px;
+            width: 400px;
+        }
+
+        .se7en {
+            height: 140px;
+            width: 400px;
+        }
+
+        .gran-torino {
+            height: 140px;
+            width: 400px;
+        }
+
+        .mac-miller {
+            height: 140px;
+            width: 400px;
+        }
+
+        .juice-wrld {
+            height: 140px;
+            width: 400px;
+        }
+
+        .post-malone {
+            height: 140px;
+            width: 400px;
+        }
+
+        .yung-buda {
+            height: 140px;
+            width: 400px;
+        }
+
+        .bring-me-the-horizon {
+            height: 140px;
+            width: 400px;
+        }
+
+        .justin-bieber {
+            height: 140px;
+            width: 400px;
+        }
+
+        .text-opacity {
+            height: 140px;
+            width: 400px;
+            opacity: 0%;
+        }
+        
+        .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 140px;
+            width: 400px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 28px;
+            color: white;
+        }
+        
+        .text-opacity:hover {
+            background-color: black;
+            opacity: 80%;
+            transition: all 0.2s;
+        }
+        .img-imdb {
+            margin-top: -24px;
+        }
+    
+        .img-spotify {
+            margin-top: 16px;
+        }
+        
+        .movies.section-img {
+            width: 60%;
+    }
+    }
+
+@media(min-width: 640px) and (max-width: 1024px) {
+    .sobre-mim {
+        padding: 0;
+        cursor: default;
+        display: flex;
+        justify-content: center;
+        padding-top: 12vw;
+        height: 100%;
+        margin: 0 auto;    
+}
+}
+@media(max-width: 1550px) {
+
+.sobre-mim {
+    padding: 0 16vw 0 12vw;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    padding-top: 12vw;
+    height: 100%;
+    margin: 0 auto;    
+}
+}
