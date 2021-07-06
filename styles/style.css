@@ -1591,8 +1591,3 @@ body::-webkit-scrollbar {
         grid-template-areas: "lgo ... mnu";
     }
 }
-
-@media  (min-width: 1024px) and (max-width: 1200px) {
-
-}
-}
