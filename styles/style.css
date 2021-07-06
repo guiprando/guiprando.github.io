@@ -708,7 +708,7 @@ body::-webkit-scrollbar {
     .redes-sociais-cel {
         display: flex;
         margin-top: 10px;
-
+        margin-left: -12px;
         align-self: center;
     }
 
