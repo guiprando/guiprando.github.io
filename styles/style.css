@@ -10,7 +10,8 @@ li {
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
+    width: 60px;    
 }
 
 body{
@@ -105,12 +106,12 @@ header {
 }
 
 .img-linkedin {
-    width: 46%;
+    width: 38%;
 }
 
 .img-instagram {
     margin-top: 3px;
-    width: 46%;
+    width: 38%;
 }
 
 .ghost {
@@ -212,7 +213,7 @@ h2 {
 }
 
 #img-gui {
-    width: 84%;
+    width: 80%;
     height: 80%
 }
 
@@ -225,16 +226,16 @@ h2 {
 }
 
 .redes-foto {
+    margin: -30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .redes-sociais {
     height: 500px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: space-evenly;
     margin-right: 2px;
 }
@@ -723,8 +724,7 @@ body::-webkit-scrollbar {
     } 
         
     #img-gui {
-        width: 100%;
-        height: 100%;
+        width: 80%;
     }
 
 
@@ -999,14 +999,14 @@ body::-webkit-scrollbar {
     }
 }
 
-@media (min-width: 1280px) and (max-width: 1360px) {
+@media (min-width: 1281px) and (max-width: 1360px) {
 
     .main-hello {
         max-width: 980px;
     }
 }
 
-@media (min-width: 1280px) and (max-width: 1600px) {
+@media (min-width: 1281px) and (max-width: 1600px) {
 
     .main-hello {
         max-width: 980px;
@@ -1074,7 +1074,7 @@ body::-webkit-scrollbar {
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1023px) and (max-width: 1279px) {
     .h1-barbearia {
         font-family: Poppins;
         font-style: normal;
@@ -1467,7 +1467,7 @@ body::-webkit-scrollbar {
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .main2 {
         display: flex;
         flex-wrap: wrap;
@@ -1590,4 +1590,9 @@ body::-webkit-scrollbar {
         padding: 0 16px;
         grid-template-areas: "lgo ... mnu";
     }
+}
+
+@media  (min-width: 1024px) and (max-width: 1200px) {
+
+}
 }
