@@ -1590,3 +1590,10 @@ body::-webkit-scrollbar {
         grid-template-areas: "lgo ... mnu";
     }
 }
+
+@media (min-width: 1025px) {
+    .h1-work-title {
+        line-height: 140px;
+        margin-top: -1px;
+        margin-bottom: -1px;
+}
