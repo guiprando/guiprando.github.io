@@ -1384,7 +1384,7 @@ body::-webkit-scrollbar {
     cursor: default;
     display: flex;
     justify-content: center;
-    padding-top: 12vw;
+    padding-top: 8vw;
     height: 100%;
     margin: 0 auto;    
 }
