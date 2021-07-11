@@ -1592,8 +1592,14 @@ body::-webkit-scrollbar {
 }
 
 @media (min-width: 1025px) {
+
+    #hello {
+        padding-top: 2vw;
+    }
+
     .h1-work-title {
         line-height: 140px;
         margin-top: -1px;
         margin-bottom: -1px;
+}
 }
